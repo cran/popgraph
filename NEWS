@@ -1,0 +1,23 @@
+version 1.3
+---------------
+* [FIX] fiddled with imports and importsFrom to get stuff to work without conflict between igraph and raster.
+* [ADD] added minus operator for popgraph objects to find differences in edge sets.
+* [FIX] changed all *population_graph() functions to *popgraph() for simplicity.
+* [FIX] fixed popgraph() to ignore issues where log(1-SRI) -> NaN due to very small values of SRI
+
+
+version 1.2
+---------------
+* [FIX] Changed geom_popgraph_edgeset() to geom_edgeset()
+* [FIX] Changed geom_popgraph_nodeset() to geom_nodeset()
+* [FIX] Changed decorate_popgraph() argument 'meta.stratum' to 'stratum'
+
+version 1.1
+---------------
+* [ADD] Added function geom_popgraph_edgeset() to plot popgraph directly in a ggplot()
+* [ADD] Added function geom_popgraph_nodeset() to plot popgraph directly in a ggplot()
+* [ADD] Added theme_empty() for plotting graphs without background axes.
+
+
+
+

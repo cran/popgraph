@@ -3,11 +3,11 @@
 \title{Converts edge set to SpatialLines object}
 \usage{
   to_SpatialLines(graph, latitude = "Latitude",
-    longitude = "Longitude")
+    longitude = "Longitude", ...)
 }
 \arguments{
-  \item{graph}{An object of type \code{population_graph}.
-  This graph must already be decroated with latitude and
+  \item{graph}{An object of type \code{popgraph}. This
+  graph must already be decroated with latitude and
   longitude attributes.}
 
   \item{latitude}{The name of the Latitude attribute
@@ -15,6 +15,8 @@
 
   \item{longitude}{The name of the Longitude attribute
   (default="Longitude")}
+
+  \item{...}{Ignored}
 }
 \value{
   A \code{SpatialLines} object

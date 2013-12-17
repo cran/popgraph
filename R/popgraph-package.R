@@ -29,6 +29,10 @@
 #' @author Rodney J. Dyer <rjdyer@@vcu.edu>
 #' @docType package
 #' @keywords package
+#' @import ggplot2 
+#' @import igraph
+#' @import Matrix
+#' @importFrom sp Lines Line SpatialPoints SpatialLines bbox
 #' @name popgraph-package
 #' @rdname popgraph-package
 #'
