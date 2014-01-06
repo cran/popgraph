@@ -2,7 +2,7 @@
 \alias{geom_nodeset}
 \title{Plotting of a population graph edge set using ggplot neumonic}
 \usage{
-  geom_nodeset(mapping = NULL, graph = NULL, ...)
+geom_nodeset(mapping = NULL, graph = NULL, ...)
 }
 \arguments{
   \item{mapping}{The aesthetic mapping as an \code{aes()}
@@ -16,12 +16,11 @@
   \item{...}{Largely ignored.}
 }
 \value{
-  A formatted geom_segment object for addition to a
-  ggplot()
+A formatted geom_segment object for addition to a ggplot()
 }
 \description{
-  This function allows you to layer the edgeset of a
-  \code{popgraph} object
+This function allows you to layer the edgeset of a
+\code{popgraph} object
 }
 \examples{
 library(igraph)
@@ -36,6 +35,6 @@ igraph::V(graph)$group <- c("A","A","B","B")
 ggplot() + geom_nodeset( aes(x=x,y=y,color=group), graph, size=4 )
 }
 \author{
-  Rodney J. Dyer <rjdyer@vcu.edu>
+Rodney J. Dyer <rjdyer@vcu.edu>
 }
 

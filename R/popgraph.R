@@ -7,11 +7,10 @@
 #' @param groups A factor indicating population membership of each row in \code{x}
 #' @param alpha The significance level to test edge retention (default = 0.05).
 #' @param tol A measure of tolerance for the retention of multivariate data columns (default sdev=1e-4)
-#' @param nboot The number of bootstraps to run to get confidence on the edges.
 #' @return An object of type \code{popgraph}.
 #' @export
 #' @author Rodney J. Dyer <rjdyer@@vcu.edu>
-popgraph <- function( x, groups, alpha=0.05, tol=1.0e-4, nboot=0 ) {
+popgraph <- function( x, groups, alpha=0.05, tol=1.0e-4 ) {
   
   if( missing(x) )
     stop("You must use a matrix to pass data to this function, object to create a 'PopulationGraph'" )
@@ -19,8 +18,9 @@ popgraph <- function( x, groups, alpha=0.05, tol=1.0e-4, nboot=0 ) {
     stop("The data passed to popgraph() needs to be a numeric matrix. If you are using gstudio, convert your data first using to_mv().")
   if( missing( groups) )
     stop("You need to specify which 'groups' the nodes will represent.")
-  if(!inherits(groups, "factor"))
-    groups <- factor( groups )
+
+  # make sure they are only factors with samples
+  groups <- factor(as.character(groups))
     
   
   # sort genos in order of Population
@@ -132,16 +132,7 @@ popgraph <- function( x, groups, alpha=0.05, tol=1.0e-4, nboot=0 ) {
   popSD <- scale( allSD, center=min(allSD), scale=TRUE) * 5 + 5
   V(graph)$size <- popSD
   
-  
-  
-  
-  ###################################
-  #   boostrap
-  ###################################
-  if( nboot > 0 ){
-    # todo: bootstrap the edges for support    
-    warning("bootstrap is not currently available.")
-  }
+
 
   class( graph ) <- c("igraph", "popgraph")
   

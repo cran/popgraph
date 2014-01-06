@@ -32,6 +32,7 @@
 #' @import ggplot2 
 #' @import igraph
 #' @import Matrix
+#' @import sampling
 #' @importFrom sp Lines Line SpatialPoints SpatialLines bbox
 #' @name popgraph-package
 #' @rdname popgraph-package
@@ -74,5 +75,24 @@ NULL
 #' @docType data
 #' @keywords data
 NULL
+
+
+#' Araptus attenuatus data
+#' 
+#' This is the Araptus attenuatus data in mv format
+#' @name arapat_mv
+#' @docType data
+#' @keywords data
+NULL
+
+#' Arapat popualtion data
+#' 
+#' The population strata for the arapat_mv data
+#' @name arapat_pop
+#' @docType data
+#' @keywords data
+NULL
+
+
 
 

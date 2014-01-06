@@ -2,20 +2,17 @@
 \alias{overlay_popgraph}
 \title{Convience function to plot edges from \code{popgraph}}
 \usage{
-  overlay_popgraph(graph)
+overlay_popgraph(graph)
 }
 \arguments{
   \item{graph}{An object of type \code{popgraph}}
 }
-\value{
-  NULL
-}
 \description{
-  This is a quick convienence function for plotting nodes
-  and edges on a normal R plot by iterating through edges
-  and connecting nodes.
+This is a quick convienence function for plotting nodes and
+edges on a normal R plot by iterating through edges and
+connecting nodes.
 }
 \author{
-  Rodney J. Dyer <rjdyer@vcu.edu>
+Rodney J. Dyer <rjdyer@vcu.edu>
 }
 

@@ -2,7 +2,7 @@
 \alias{read.popgraph}
 \title{Reads in a population graph text file}
 \usage{
-  read.popgraph(file, sep = "\t")
+read.popgraph(file, sep = "\\t")
 }
 \arguments{
   \item{file}{The path to the file that is to be saved.}
@@ -12,14 +12,13 @@
   used.}
 }
 \value{
-  A fully created popgraph file (e.g., an igraph object
-  with an extra class property)
+A fully created popgraph file (e.g., an igraph object with
+an extra class property)
 }
 \description{
-  This function imports a popgraph from the older text
-  format
+This function imports a popgraph from the older text format
 }
 \author{
-  Rodney J. Dyer <rjdyer@vcu.edu>
+Rodney J. Dyer <rjdyer@vcu.edu>
 }
 

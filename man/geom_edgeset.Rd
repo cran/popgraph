@@ -2,8 +2,7 @@
 \alias{geom_edgeset}
 \title{Plotting of a population graph edge set using ggplot neumonic}
 \usage{
-  geom_edgeset(mapping = NULL, graph = NULL,
-    directed = FALSE, ...)
+geom_edgeset(mapping = NULL, graph = NULL, directed = FALSE, ...)
 }
 \arguments{
   \item{mapping}{The aesthetic mapping as an \code{aes()}
@@ -19,12 +18,11 @@
   \item{...}{Largely ignored.}
 }
 \value{
-  A formatted geom_segment object for addition to a
-  ggplot()
+A formatted geom_segment object for addition to a ggplot()
 }
 \description{
-  This function allows you to layer the edgeset of a
-  \code{popgraph} object
+This function allows you to layer the edgeset of a
+\code{popgraph} object
 }
 \examples{
 a <- matrix( c(0,1,0,1,1,0,0,1,0,0,0,1,1,1,1,0),nrow=4)
@@ -39,6 +37,6 @@ require(grid)
 ggplot() + geom_edgeset( aes(x=x,y=y), graph, directed=TRUE, arrow=arrow(length=unit(0.5,"cm")) )
 }
 \author{
-  Rodney J. Dyer <rjdyer@vcu.edu>
+Rodney J. Dyer <rjdyer@vcu.edu>
 }
 

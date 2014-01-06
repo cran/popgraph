@@ -2,7 +2,7 @@
 \alias{-.popgraph}
 \title{Overload '-' operator for pairs of \code{popgraph} objects}
 \usage{
-  \method{-}{popgraph} (e1, e2)
+\method{-}{popgraph}(e1, e2)
 }
 \arguments{
   \item{e1}{A \code{popgraph} object reprenting the
@@ -12,14 +12,13 @@
   parent.}
 }
 \value{
-  A new \code{popgraph} object that represents the
-  genotypes left over after removing the parental part (if
-  possible).
+A new \code{popgraph} object that represents the genotypes
+left over after removing the parental part (if possible).
 }
 \description{
-  An overload of the \code{-} operator for \code{popgraph}
-  objects that removes the edges in the first one that are
-  in the second one.
+An overload of the \code{-} operator for \code{popgraph}
+objects that removes the edges in the first one that are in
+the second one.
 }
 \examples{
 library(igraph)
@@ -34,6 +33,6 @@ plot(e3, layout=l)
 par(mfrow=c(1,1))
 }
 \author{
-  Rodney J. Dyer \email{rjdyer@vcu.edu}
+Rodney J. Dyer \email{rjdyer@vcu.edu}
 }
 

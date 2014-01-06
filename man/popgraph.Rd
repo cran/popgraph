@@ -2,7 +2,7 @@
 \alias{popgraph}
 \title{Default constructor for a \code{PopulationGraph} object}
 \usage{
-  popgraph(x, groups, alpha = 0.05, tol = 1e-04, nboot = 0)
+popgraph(x, groups, alpha = 0.05, tol = 1e-04)
 }
 \arguments{
   \item{x}{An object of type \code{matrix} that holds the
@@ -16,20 +16,17 @@
 
   \item{tol}{A measure of tolerance for the retention of
   multivariate data columns (default sdev=1e-4)}
-
-  \item{nboot}{The number of bootstraps to run to get
-  confidence on the edges.}
 }
 \value{
-  An object of type \code{popgraph}.
+An object of type \code{popgraph}.
 }
 \description{
-  This function is the default constructor for
-  \code{PopulationGraph} objects.  Mechanistically, a
-  \code{PopulationGraph} is a class that has some meta data
-  and an \code{igraph} object within it.
+This function is the default constructor for
+\code{PopulationGraph} objects.  Mechanistically, a
+\code{PopulationGraph} is a class that has some meta data
+and an \code{igraph} object within it.
 }
 \author{
-  Rodney J. Dyer <rjdyer@vcu.edu>
+Rodney J. Dyer <rjdyer@vcu.edu>
 }
 

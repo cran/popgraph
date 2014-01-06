@@ -1,8 +1,8 @@
-\name{write.popgraph}
-\alias{write.popgraph}
+\name{write_popgraph}
+\alias{write_popgraph}
 \title{Convience function for file exports}
 \usage{
-  write.popgraph(graph, file, format = "pgraph", ...)
+write_popgraph(graph, file, format = "pgraph", ...)
 }
 \arguments{
   \item{graph}{An object of type \code{popgraph}.}
@@ -24,13 +24,13 @@
   \item{...}{Ignored}
 }
 \value{
-  Nothing
+Nothing
 }
 \description{
-  This function is a chokepoint for exporting
-  \code{popgraph} objects to other formats.
+This function is a chokepoint for exporting \code{popgraph}
+objects to other formats.
 }
 \author{
-  Rodney J. Dyer <rjdyer@vcu.edu>
+Rodney J. Dyer <rjdyer@vcu.edu>
 }
 
